@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdio.h>
+#include<set>
 using namespace std;
 int map[100001],n,q;
 int rnk[100001];
@@ -39,8 +40,8 @@ int main()
     scanf(" %c %d %d" ,&c,&x,&y);
     if(c=='q')
     {
-      if(find(x)==find(y)) cout << "yes" << endl;
-      else cout << "no" << endl;
+      if(find(x)==find(y)) printf("yes\n");
+      else printf("no\n");
     }
     else if(c=='c')
     {
